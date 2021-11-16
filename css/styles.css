@@ -1,0 +1,20 @@
+h1 {
+    font-size: 70px;
+    color: #c9c61a;
+    text-shadow: rgb(20, 20, 20) 1px 0 10px;
+}
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, #340bee, #3046C5, #60106B);
+    color: white;
+}
+
+.navbar {
+    background-color: #bfecec;
+}
+
+.site-footer {
+    background-image: linear-gradient(#c8fbff, white);
+    padding: 20px 0;
+}
