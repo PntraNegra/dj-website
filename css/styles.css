@@ -1,5 +1,5 @@
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: #0d0e0d;
@@ -7,8 +7,9 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h3 {
+h2 {
     text-align: center;
+    margin: 20px;
 }
 
 .jumbotron {
@@ -61,7 +62,35 @@ h3 {
     font-size: 8px;
 }
 
+.pic{
+    width: 100px;
+    margin: 20px;
+}
+
+.margin {
+    margin: 25px;
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
 @media only screen and (min-width: 600px){
+    h1 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        color: #0d0e0d;
+        /* text-shadow: rgb(20, 20, 20) 1px 0 3px; */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
     .month {
         text-align: center;
         font-weight: bold;
@@ -82,5 +111,10 @@ h3 {
     .calendar-days {
         border:solid 1px black;
         font-size: 15px;
+    }
+
+    .pic{
+        width: 200px;
+        margin: 20px;
     }
 }
