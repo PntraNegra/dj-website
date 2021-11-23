@@ -37,3 +37,50 @@ h3 {
     bottom: 0;
     z-index: 100;
 }
+
+.month {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    border: solid 1px black;
+}
+
+.day {
+    text-align: right;
+    font-weight: bold;
+}
+
+.calendar {
+    block-size: 50px;
+    border: solid 1px black;
+    font-size: 10px;
+}
+
+.calendar-days {
+    border:solid 1px black;
+    font-size: 8px;
+}
+
+@media only screen and (min-width: 600px){
+    .month {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .day {
+        text-align: right;
+        font-weight: bold;
+    }
+    
+    .calendar {
+        block-size: 120px;
+        border:solid 1px black;
+        font-size: 15px;
+    }
+
+    .calendar-days {
+        border:solid 1px black;
+        font-size: 15px;
+    }
+}
