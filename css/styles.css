@@ -71,14 +71,23 @@ h2 {
     margin: 25px;
 }
 
-.card {
+.review-card {
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 15px;
 }
 
-.card-header {
+.review-header {
     border-radius: 15px 15px 0 0 !important;
+}
+
+.merch {
+    width: 150px;
+}
+
+.card-shop {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 600px){
@@ -116,5 +125,9 @@ h2 {
     .pic{
         width: 200px;
         margin: 20px;
+    }
+
+    .merch {
+        width: 250px;
     }
 }
