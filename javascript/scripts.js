@@ -1,3 +1,4 @@
+//Carousel Script
 $(function() {
     $(".carousel").carousel( { interval: 3500, pause: "false" } );
     $("#carouselButton").click(function(){
@@ -12,7 +13,7 @@ $(function() {
         }
     });
 });
-
+//change piucture when mouse hovers over
 $(function() {
     $("#change-img").hover(function(){
         $( "#change-img" ).attr("src","/img/tshirt2.jpg");
@@ -46,5 +47,31 @@ $(function() {
         $( "#change-img5" ).attr("src","/img/Jacket2.jpg");
     }, function(){
         $( "#change-img5" ).attr("src","/img/Jacket1.jpg");
+    });
+});
+//Shop modal funcionality buttons
+$(function() {
+    $("#itemButton").click(function(){
+        $("#itemModal").modal("show");
+    });
+});
+$(function() {
+    $("#itemButton2").click(function(){
+        $("#itemModal2").modal("show");
+    });
+});
+$(function() {
+    $("#itemButton3").click(function(){
+        $("#itemModal3").modal("show");
+    });
+});
+$(function() {
+    $("#itemButton4").click(function(){
+        $("#itemModal4").modal("show");
+    });
+});
+$(function() {
+    $("#itemButton5").click(function(){
+        $("#itemModal5").modal("show");
     });
 });

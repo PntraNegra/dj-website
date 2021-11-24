@@ -90,6 +90,11 @@ h2 {
     margin-bottom: 30px;
 }
 
+.black {
+    color: white;
+    background-color: black;
+}
+
 @media only screen and (min-width: 600px){
     h1 {
         font-size: 50px;

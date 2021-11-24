@@ -101,7 +101,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Cart Items-->
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -115,9 +115,9 @@
                     <div class="card card-shop" style="width: 18rem;">
                         <img id="change-img" class="card-img-top" src="/img/tshirt1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">T-Shirt - $15</h5>
+                            <p class="card-text">Made out of 100% cotton, this tee will get you through the day comfortably.</p>
+                            <a id="itemButton" class="btn btn-primary">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -125,9 +125,9 @@
                     <div class="card card-shop" style="width: 18rem;">
                         <img id="change-img2" class="card-img-top" src="/img/tshirt1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">T-Shirt - $15</h5>
+                            <p class="card-text">Made out of 100% cotton, this tee will get you through the day comfortably.</p>
+                            <a id="itemButton2" class="btn btn-primary">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -137,9 +137,9 @@
                     <div class="card card-shop" style="width: 18rem;">
                         <img id="change-img3" class="card-img-top" src="/img/Jacket1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Jacket - $45</h5>
+                            <p class="card-text">Made out of 100% cotton, this tee will get you through the day comfortably.</p>
+                            <a id="itemButton3" class="btn btn-primary">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -147,9 +147,9 @@
                     <div class="card card-shop" style="width: 18rem;">
                         <img id="change-img4" class="card-img-top" src="/img/Jacket1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Jacket - $45</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a id="itemButton4" class="btn btn-primary">Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -159,9 +159,376 @@
                     <div class="card card-shop" style="width: 18rem;">
                         <img id="change-img5" class="card-img-top" src="/img/Jacket1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Jacket - $45</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a id="itemButton5" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Code for Item modals-->
+
+        <div id="itemModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Customize Your Order</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="itemForm">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="shirtSize">Shirt Size</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="shirtSize" id="shirtSize">
+                                            <option value="select">Select...</option>
+                                            <option value="XS">Extra-Small</option>
+                                            <option value="S">Small</option>
+                                            <option value="M">Medium</option>
+                                            <option value="L">Large</option>
+                                            <option value="XL"> Extra-Large</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="quantity">Quantity</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="quantity" id="quantity">
+                                            <option value="select">Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Shirt Color</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active col-3">
+                                                <input type="radio" name="shirtColor" id="green" value="green" checked> Green
+                                            </label>
+                                            <label class="btn btn-primary col-3">
+                                                <input type="radio" name="shirtColor" id="blue" value="blue"> Blue
+                                            </label>
+                                            <label class="btn btn-light col-3">
+                                                <input type="radio" name="shirtColor" id="white" value="white"> White
+                                            </label>
+                                            <label class="btn black col-3">
+                                                <input type="radio" name="shirtColor" id="black" value="black"> Black
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Item model 2-->
+        <div id="itemModal2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Customize Your Order</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="itemForm">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="shirtSize">Shirt Size</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="shirtSize" id="shirtSize">
+                                            <option value="select">Select...</option>
+                                            <option value="XS">Extra-Small</option>
+                                            <option value="S">Small</option>
+                                            <option value="M">Medium</option>
+                                            <option value="L">Large</option>
+                                            <option value="XL"> Extra-Large</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="quantity">Quantity</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="quantity" id="quantity">
+                                            <option value="select">Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Shirt Color</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active col-3">
+                                                <input type="radio" name="shirtColor" id="green" value="green" checked> Green
+                                            </label>
+                                            <label class="btn btn-primary col-3">
+                                                <input type="radio" name="shirtColor" id="blue" value="blue"> Blue
+                                            </label>
+                                            <label class="btn btn-light col-3">
+                                                <input type="radio" name="shirtColor" id="white" value="white"> White
+                                            </label>
+                                            <label class="btn black col-3">
+                                                <input type="radio" name="shirtColor" id="black" value="black"> Black
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Item Modal 3-->
+        <div id="itemModal3" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Customize Your Order</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="itemForm">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="jacketSize">Jacket Size</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="jacketSize" id="jacketSize">
+                                            <option value="select">Select...</option>
+                                            <option value="XS">Extra-Small</option>
+                                            <option value="S">Small</option>
+                                            <option value="M">Medium</option>
+                                            <option value="L">Large</option>
+                                            <option value="XL"> Extra-Large</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="quantity">Quantity</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="quantity" id="quantity">
+                                            <option value="select">Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Jacket Color</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active col-3">
+                                                <input type="radio" name="jacketColor" id="green" value="green" checked> Green
+                                            </label>
+                                            <label class="btn btn-primary col-3">
+                                                <input type="radio" name="jacketColor" id="blue" value="blue"> Blue
+                                            </label>
+                                            <label class="btn btn-light col-3">
+                                                <input type="radio" name="jacketColor" id="white" value="white"> White
+                                            </label>
+                                            <label class="btn black col-3">
+                                                <input type="radio" name="jacketColor" id="black" value="black"> Black
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Item Modal 4-->
+        <div id="itemModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Customize Your Order</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="itemForm">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="jacketSize">Jacket Size</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="jacketSize" id="jacketSize">
+                                            <option value="select">Select...</option>
+                                            <option value="XS">Extra-Small</option>
+                                            <option value="S">Small</option>
+                                            <option value="M">Medium</option>
+                                            <option value="L">Large</option>
+                                            <option value="XL"> Extra-Large</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="quantity">Quantity</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="quantity" id="quantity">
+                                            <option value="select">Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Jacket Color</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active col-3">
+                                                <input type="radio" name="jacketColor" id="green" value="green" checked> Green
+                                            </label>
+                                            <label class="btn btn-primary col-3">
+                                                <input type="radio" name="jacketColor" id="blue" value="blue"> Blue
+                                            </label>
+                                            <label class="btn btn-light col-3">
+                                                <input type="radio" name="jacketColor" id="white" value="white"> White
+                                            </label>
+                                            <label class="btn black col-3">
+                                                <input type="radio" name="jacketColor" id="black" value="black"> Black
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item Modal 5-->
+        <div id="itemModal5" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Customize Your Order</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="itemForm">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="jacketSize">Jacket Size</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="jacketSize" id="jacketSize">
+                                            <option value="select">Select...</option>
+                                            <option value="XS">Extra-Small</option>
+                                            <option value="S">Small</option>
+                                            <option value="M">Medium</option>
+                                            <option value="L">Large</option>
+                                            <option value="XL"> Extra-Large</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-6" for="quantity">Quantity</label>
+                                    <div class="col">
+                                        <select class="form-control col" name="quantity" id="quantity">
+                                            <option value="select">Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Jacket Color</label>
+                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-success active col-3">
+                                                <input type="radio" name="jacketColor" id="green" value="green" checked> Green
+                                            </label>
+                                            <label class="btn btn-primary col-3">
+                                                <input type="radio" name="jacketColor" id="blue" value="blue"> Blue
+                                            </label>
+                                            <label class="btn btn-light col-3">
+                                                <input type="radio" name="jacketColor" id="white" value="white"> White
+                                            </label>
+                                            <label class="btn black col-3">
+                                                <input type="radio" name="jacketColor" id="black" value="black"> Black
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
